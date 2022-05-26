@@ -33,4 +33,8 @@ export class CustomersController {
     if (customer) return customer;
     else throw new HttpException('customer not found', HttpStatus.BAD_REQUEST);
   }
+  @Post('/create')
+  createCustomer(@Req() req: Request) {
+    req.body.
+  }
 }

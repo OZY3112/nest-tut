@@ -1,4 +1,4 @@
-import { Injectable, Param } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { CreateCustomerDto } from '../../dtos/CreateCustomer.dto';
 import { Customer } from 'src/customers/types/customer';
 

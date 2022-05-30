@@ -11,6 +11,7 @@ import { CreateAddressDto } from './CreateAddressDto.dto';
 
 export class CreateCustomerDto {
   @IsEmail()
+  @IsNotEmpty()
   email: string;
 
   @IsNumberString()

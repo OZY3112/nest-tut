@@ -8,14 +8,17 @@ export class UsersService {
     {
       username: 'OZY',
       password: '123456',
+      id: 1,
     },
     {
       username: 'mohla',
       password: '123456',
+      id: 2,
     },
     {
       username: 'h333',
       password: '123456',
+      id: 3,
     },
   ];
   getUsers() {
@@ -23,5 +26,8 @@ export class UsersService {
   }
   getUsersByUsername(username: string) {
     return this.users.find((user) => user.username === username);
+  }
+  getUserById(id: number) {
+    return this.users.find((user) => user.id === id);
   }
 }
